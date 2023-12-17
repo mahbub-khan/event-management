@@ -1,0 +1,84 @@
+{
+  "careerFairs": [
+    {
+      "id": 1,
+      "title": "Career Connect Expo",
+      "location": "City Convention Center",
+      "time": "10:00 AM - 4:00 PM",
+      "date": "1st-December-2023",
+      "status": 1
+    },
+    {
+      "id": 2,
+      "title": "JobQuest Fair",
+      "location": "Tech Hub Auditorium",
+      "time": "9:30 AM - 3:30 PM",
+      "date": "2nd-May-2023",
+      "status": 0
+    },
+    {
+      "id": 3,
+      "title": "Career Catalyst Summit",
+      "location": "Metropolitan Conference Hall",
+      "time": "11:00 AM - 5:00 PM",
+      "date": "10th-June-2023",
+      "status": 0
+    },
+    {
+      "id": 4,
+      "title": "FutureFit Career Expo",
+      "location": "Innovation Plaza",
+      "time": "10:30 AM - 4:30 PM",
+      "date": "18th-July-2023",
+      "status": 0
+    },
+    {
+      "id": 5,
+      "title": "Opportunity Odyssey Fair",
+      "location": "Grand Exhibition Center",
+      "time": "9:00 AM - 5:00 PM",
+      "date": "5th-August-2023",
+      "status": 0
+    },
+    {
+      "id": 6,
+      "title": "Professional Pathways Showcase",
+      "location": "Business District Pavilion",
+      "time": "10:00 AM - 3:00 PM",
+      "date": "22nd-September-2023",
+      "status": 1
+    },
+    {
+      "id": 7,
+      "title": "CareerVista Expo",
+      "location": "Tech Innovators Arena",
+      "time": "12:00 PM - 6:00 PM",
+      "date": "15th-October-2023",
+      "status": 1
+    },
+    {
+      "id": 8,
+      "title": "Elevate Your Career Fair",
+      "location": "Skyline Conference Center",
+      "time": "11:30 AM - 5:30 PM",
+      "date": "7th-November-2023",
+      "status": 1
+    },
+    {
+      "id": 9,
+      "title": "Job Horizons Symposium",
+      "location": "Global Business Hall",
+      "time": "10:00 AM - 4:00 PM",
+      "date": "2nd-December-2023",
+      "status": 1
+    },
+    {
+      "id": 10,
+      "title": "Gateway to Success Fair",
+      "location": "Corporate Plaza",
+      "time": "9:00 AM - 5:00 PM",
+      "date": "15th-January-2023",
+      "status": 0
+    }
+  ]
+}
