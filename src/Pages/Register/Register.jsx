@@ -3,13 +3,20 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import toast from "react-hot-toast";
 import { Helmet } from "react-helmet-async";
+import { FaEye, FaEyeSlash } from "react-icons/fa6";
 
 const Register = () => {
   const { registerUser, updateUser } = useContext(AuthContext);
+  const [showPassword, setShowPassword] = useState(false);
+
   const [passLength, setPassLength] = useState(false);
   const [isCapLetter, setIsCapLetter] = useState(false);
   const [isSpecialChar, setIsSpecialChar] = useState(false);
   const [buttonDisabled, setbuttonDisabled] = useState(true);
+
+  const handleShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
 
   const handlePassOnChange = (e) => {
     const passwordFieldValue = e.target.value;
@@ -105,18 +112,24 @@ const Register = () => {
                     required
                   />
                 </div>
-                <div className="form-control">
+                <div className="form-control relative">
                   <label className="label">
                     <span className="label-text">Password</span>
                   </label>
                   <input
-                    type="text"
+                    type={showPassword ? "text" : "password"}
                     name="password"
                     placeholder="Your Password"
                     className="input input-bordered mb-3"
                     onChange={handlePassOnChange}
                     required
                   />
+                  <span
+                    onClick={handleShowPassword}
+                    className="absolute top-[50px] right-[15px] text-[#8d8d8d]"
+                  >
+                    {showPassword ? <FaEyeSlash /> : <FaEye />}
+                  </span>
                   <div id="password-validators" className="text-sm">
                     <p>Must have at least:</p>
                     <div>
