@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import toast from "react-hot-toast";
 import { Helmet } from "react-helmet-async";
@@ -7,6 +7,8 @@ import { FaEye, FaEyeSlash } from "react-icons/fa6";
 
 const Register = () => {
   const { registerUser, updateUser } = useContext(AuthContext);
+  const navigate = useNavigate();
+
   const [showPassword, setShowPassword] = useState(false);
 
   const [passLength, setPassLength] = useState(false);
@@ -60,6 +62,7 @@ const Register = () => {
         updateUser(name, image)
           .then(() => toast.success(`${name} Created an account successfully`))
           .catch((error) => toast.error(error.message));
+        navigate("/");
       })
       .catch((error) => toast.error(error.message));
   };

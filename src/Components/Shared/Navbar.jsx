@@ -5,7 +5,6 @@ import toast from "react-hot-toast";
 
 const Navbar = () => {
   const { user, logout } = useContext(AuthContext);
-  const userFirstName = user?.displayName.split(" ");
 
   const handleLogout = () => {
     logout()
@@ -70,7 +69,7 @@ const Navbar = () => {
           <div className="navbar-end">
             {user ? (
               <>
-                <p className="font-medium">{userFirstName[0]}</p>
+                <p className="font-medium">{user.displayName}</p>
                 <div className="avatar">
                   <div className="w-14 mask mask-squircle mx-3">
                     <img src={user.photoURL} />
